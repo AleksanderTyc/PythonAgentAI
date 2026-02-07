@@ -28,8 +28,8 @@ client = OpenAI(
 def sync_chat_completion(usr_query):
     response = client.chat.completions.create(
         # model='tngtech/deepseek-r1t2-chimera:free',
-        model='deepseek/deepseek-r1-0528:free',
-        # model='tngtech/deepseek-r1t-chimera:free',
+        # model='deepseek/deepseek-r1-0528:free',
+        model='tngtech/deepseek-r1t-chimera:free',
         messages=[
             {
                 'role': 'system',
